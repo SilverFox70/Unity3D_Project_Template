@@ -16,3 +16,18 @@ git remote set-url origin https://William.Brinkert@bitbucket.akqa.net/scm/~willi
 git push -u origin master
 ```
 4. [Install Git LFS](https://help.github.com/articles/installing-git-large-file-storage/)
+5. In your existing-project directory, run `git lfs install`
+6. Enable SmartMerge by adding the following to your Git config:
+``` Bash
+[mergetool "unity_yaml"]
+cmd = '/Applications/Unity/Unity.app/Contents/Tools/UnityYAMLMerge' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
+trustExitCode = false
+keepTemporaries = true
+keepBackup = false
+ 
+[merge]
+tool = unity_yaml
+```
+**Note:** on Windows machines replace `/Applications/Unity/Unity.app/Contents/Tools/UnityYAMLMerge` with:
+`C:\Program Files\Unity\Editor\Data\Tools\UnityYAMLMerge.exe`
+or wherever you installed Unity. For more information on how to use SmartMerge, see [here](http://www.gamasutra.com/blogs/TimPettersen/20161206/286981/The_complete_guide_to_Unity__Git.php).
