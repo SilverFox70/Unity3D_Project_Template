@@ -5,6 +5,8 @@ This is a bare bones starter repo for Unity 3D projects. The `.gitignore` and `.
 - **Version Control > Mode** is **Visible Meta Files**
 - **Asset Serialization > Mode** is **Force Text**
 
+There is also a template script in `Assets/Scripts` for an EventManager.
+
 ### Getting Started
 For use in your own projects:
 1. Fork or clone this repo to your local machine
@@ -31,3 +33,8 @@ tool = unity_yaml
 **Note:** on Windows machines replace `/Applications/Unity/Unity.app/Contents/Tools/UnityYAMLMerge` with:
 `C:\Program Files\Unity\Editor\Data\Tools\UnityYAMLMerge.exe`
 or wherever you installed Unity. For more information on how to use SmartMerge, see [here](http://www.gamasutra.com/blogs/TimPettersen/20161206/286981/The_complete_guide_to_Unity__Git.php).
+
+## Project Structure
+- [`/Assets`](./Assets/) - where the majority of Unity assets are stored (scenes, scripts, prefabs)
+- [`/Assets/Scripts/`](./Assets/Scripts/) - all C# scripts can be found here
+

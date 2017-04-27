@@ -23,7 +23,7 @@ public class EventManager : MonoBehaviour {
 		// Register your events here...
 	}
 
-	// Unsubscribe to event and unregister delegates
+	// Unsubscribe to events and unregister delegates
 	private void OnDisable()
 	{
 		// UnRegister your event here...
